@@ -1,0 +1,23 @@
+{
+  "name": "simulasi-payment-intent-midtrans",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "midtrans-client": "^1.4.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "node-fetch": "^3.3.2"
+  }
+}
