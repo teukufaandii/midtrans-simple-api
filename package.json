@@ -10,11 +10,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "midtrans-client": "^1.4.2",
     "nodemon": "^3.1.9"
   },
   "dependencies": {
-    "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
