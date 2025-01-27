@@ -65,7 +65,38 @@ Server akan berjalan di `http://localhost:5000`.
 
 ## 📋 Endpoint API
 
-### 1️⃣ 1. **POST /api/payment**
+### 1️⃣ 1. **POST /api/products**
+
+Membuat "Product" baru untuk target payment intent.
+
+**Request Body:**
+
+```json
+{
+  "name": "Product Name",
+  "description": "Product Desc",
+  "price": 20000,
+  "currency": "IDR",
+  "stock": 1
+}
+```
+
+**Response:**
+
+```json
+{
+  "message": "Product created successfully",
+  "product": {
+    "name": "Product Name",
+    "description": "Product Desc",
+    "price": 20000,
+    "currency": "IDR",
+    "stock": 1
+  }
+}
+```
+
+### 2️⃣ 1. **POST /api/payment**
 
 Membuat "Payment Intent" baru dan mendapatkan token serta URL pembayaran dari Midtrans.
 
@@ -89,7 +120,7 @@ Membuat "Payment Intent" baru dan mendapatkan token serta URL pembayaran dari Mi
 }
 ```
 
-### 2️⃣ **POST /api/payment/midtrans/callback**
+### 3️⃣ **POST /api/payment/midtrans/callback**
 
 Endpoint untuk menerima notifikasi dari Midtrans terkait status pembayaran.
 
